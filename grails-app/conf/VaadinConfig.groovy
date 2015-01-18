@@ -8,7 +8,12 @@ vaadin {
             "/admin/*" : "app.AdminUI",
 			"/demo/*" : "app.DemoUI",
 			"/demotab/*" : "app.DemoTab",
-			"/chapter2/ListSelect/*" : "app.chapter2.ListSelect"
+			"/chapter2/ListSelect/*" : "app.chapter2.ListSelect",
+			"/chapter6/Validation/*" : "app.chapter6.ValidationUI",
+			"/chapter7/SimpleForm/*" : "app.chapter7.SimpleFormUI",
+			"/chapter7/BeanForm/*" : "app.chapter7.BeanFormUI",
+			"/chapter7/crudUI/*" : "app.chapter7.CrudUI",
+			"/chapter8/GrailsVaadin/*" : "app.chapter8.GrailsVaadinUI"
     ]
 
     // Extra mapping in case you need 'reserve' a URL and it shouldn't be mapped to e.g. /* by Vaadin
@@ -30,7 +35,7 @@ vaadin {
     // Uncomment this to activate Open Session in View for Hibernate 3
     // openSessionInViewFilter = 'org.springframework.orm.hibernate3.support.OpenSessionInViewFilter'
     // ...or this for Hibernate 4
-    // openSessionInViewFilter = 'org.springframework.orm.hibernate4.support.OpenSessionInViewFilter'
+//     openSessionInViewFilter = 'org.springframework.orm.hibernate4.support.OpenSessionInViewFilter'
 
     // Uncomment this to enable asynchronous communication, useful for vaadin-push
     // asyncSupported = true
