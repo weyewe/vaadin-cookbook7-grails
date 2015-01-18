@@ -26,8 +26,22 @@ class AddUserListener implements ClickListener {
 	
 		
 		User user = userService.add(value) 
+//		user.errors.allErrors.each {log.error messageSource.getMessage(it, null)}
+		
+		user.errors.rejectValue("name", "Banzai")
 		
 		ui.layout.addComponent( new Label(user.name) ) 
+		user.errors.allErrors.each { println "The error: " + it.code }
+		
+		
+//		if (someError) {
+//			domainobject.errors.rejectValue('param', "hasErrors")
+//		  }
+//		  ...
+//		  if (!domainobject.hasErrors() && domainobject.save(flush: true)) {
+//			  
+//			  
+//		  }
 		
 	}
 	
