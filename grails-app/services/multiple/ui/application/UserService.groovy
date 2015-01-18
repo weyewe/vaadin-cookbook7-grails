@@ -22,6 +22,8 @@ class UserService {
 	def User add(String name) {
 		User user = new User()
 		user.name = name 
+		
+		
 		user.save( failOnError: true ) 
 		return user 
 	}
